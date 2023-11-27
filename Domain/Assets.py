@@ -1,6 +1,5 @@
 import decimal
 from dataclasses import dataclass
-from pandas import DataFrame
 from pyarrow import timestamp
 
 
