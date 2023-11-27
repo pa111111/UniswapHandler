@@ -1,0 +1,11 @@
+<data>
+    <items>
+        <item name="Flipside">
+            <api>6f931420-e70d-404a-a123-50959b03a493</api>
+        </item>
+        <item name="Google_Sheets">
+            <googlesheet>Uniswap_v3_pools_analysis</googlesheet>
+            <credetials>service/uniswap-403611-b89c1bb8035d.json</credetials>
+        </item>
+    </items>
+</data>

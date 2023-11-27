@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "uniswap-403611",
+  "private_key_id": "b89c1bb8035d5df8a3b24afb6eb896ac11446f9b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCzmJBr+Zf8SMD+\nyf+eKOPxwW2o/miqVKp7fyvQ2B49Rr3h0h3Kseun9WA4y3Enkgg58t7Fcpus2Mqi\nBMUpS2r0UZrSPIAdcOATLTI2fjFT2s9fqEYcLUaTEJ1TJv3FcKTLn4edQ5sRXIJj\n7nZblNdSTWD8QDz9542xEmUHiOQMsaLEYmWyJUUISmnyWs6QSlzUBRIawU0TjbdR\ngdd+q3LbF6SMfjczXf2gexh8CyZbfMmQzuwGH2Nb9QbtD4f1a2hGFR5n+ua9Qx/P\ncMkGTUpb5lreCdrlXKrboje0L76zPyCcj5mSv19UHNfm6mD4g+RPYxnpMBjqXwc8\nXAF4GoT7AgMBAAECggEAJXay0cNMIBVxJPUwPGbdPeYSoQkI/lcRBRf/JN6gWDn0\njDHPgyPgO7Yk71QI868zxhrSu69vp/vFMUz7b+TKl9KaEDcMppeQNo/cBKAIXCyt\ny4+HqIMNUMpLdzgQAerAhbVujbC3nUSF8qCg0fPXgtSfYZ9o2bI+zWw/5PV6VOcz\nzT3RleEVthYXvJIB8bUEiAUSfHOb4zKPVeHXP+HOOKTSSfM3WgT15rwJrRFa3Hda\nM/Kuo7FV20geEKsaca5mRgFo3m7m8wN+T1HcWrOWQb4IVUqUxP02bAdf327cTEU5\n03o87FIGY0/nDmtuoEau6dAGRka/jKfyC5fIqKVScQKBgQDY4Ia74WYUPDmG982k\nV1eYXjYvhSdyHlvFxkKGX24BP8ufaEImAykLBhIsotqdxI5ay2/NHIS6toeVIIvB\n3u+GTVs4ixz+Yte6a+0Q0Kx8sDvGdZXimT/b4FkcgYvztcWXxQTo/4q/fzX1Dafo\nglvFISIx9Tm/zQ2qQFZX9RLIYwKBgQDT/mF/6a1QrxUHQcBoYO20/fOww5b3Fmf+\nrl+ilZX6LxlBevG4XhkMOck4YO6ew6T/Fbna1lrBk86bJj7XlOxZu+kqAj9snWl6\n3uU7EsfUJL3ic3JW8gXvyNxi4je2e6Og1dFacdse4TMEqVACKFhpeanTLjLyrU9K\nTgaE0ewYiQKBgGzjDcJ2wFGYiymAcPb6Azi01G+3Yr6hD2KU0AG3F/v4k7tNFSkQ\nnSKzwZw3h5t+fBqJ2XAZyWoVCq2M0Z5c19WOMSaKcdwmtDkcxsGSg4d21AwoLUC/\nwJgcY6E0SZfqw3IXsQdqhbbvn5+RY6QRDxJCOHDstjneMeYwtykiGnQRAoGAS42k\nuA7TOyc7ClwPs+OftFqxyDTdD/DHXYhOA0bmrcStbp3fmkLHEIljwpkhUioOGu9m\nTq0IqWcBQmBOE007Mvv6rIMikZZEaosYDYay+1Og7R0SChS1svDWQtO24W2NMpwh\nwedEHexK34VsQ2iXofe/Y8laVQ0ZbjUCs8GRMGkCgYAKTTXIg/aZik0NCDyZaZWU\njFbmOZFuvUXqoMAIV13a+CrSbGsaPwgDCDPvvfaCnrErHWdEQgbuXjaWfN1NXo4w\n9LJMn9bzotuA90e6bMnwTNSFbF7ZygVHL7l0HEC75mUhPbVMVmvUnPJDlLSiv1N8\n6P+2U/1tIEUP5ZiYB+3Kew==\n-----END PRIVATE KEY-----\n",
+  "client_email": "python-to-google-sheet@uniswap-403611.iam.gserviceaccount.com",
+  "client_id": "105309790854582325047",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/python-to-google-sheet%40uniswap-403611.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
