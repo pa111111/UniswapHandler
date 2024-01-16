@@ -1,5 +1,5 @@
 ﻿# coding: utf-8
-from sqlalchemy import Column, DateTime, ForeignKey, Integer, Numeric, String
+from sqlalchemy import Column, DateTime, ForeignKey, Integer, Numeric, String, Boolean
 from sqlalchemy.orm import relationship
 from sqlalchemy.ext.declarative import declarative_base
 
@@ -13,10 +13,18 @@ class Asset(Base):
     id = Column(Integer, primary_key=True)
     name = Column(String(50))
     symbol = Column(String(50))
+    load_prices = Column(Boolean)
 
 
 class Blockchain(Base):
     __tablename__ = 'blockchain'
+
+    id = Column(Integer, primary_key=True)
+    name = Column(String(50))
+
+
+class PurchasePeriod(Base):
+    __tablename__ = 'purchase_period'
 
     id = Column(Integer, primary_key=True)
     name = Column(String(50))
@@ -35,13 +43,35 @@ class AssetBlockchain(Base):
     blockchain = relationship('Blockchain')
 
 
-class AssetHourPrice(Base):
-    __tablename__ = 'asset_hour_price'
+class AssetHourUsdPrice(Base):
+    __tablename__ = 'asset_hour_usd_price'
 
     id = Column(Integer, primary_key=True)
     asset_id = Column(ForeignKey('asset.id'))
-    usd_price = Column(Numeric)
-    hour = Column(DateTime)
+    price = Column(Numeric)
+    ts = Column(DateTime)
+
+    asset = relationship('Asset')
+
+
+class AssetDailyUsdPrice(Base):
+    __tablename__ = 'asset_daily_usd_price'
+
+    id = Column(Integer, primary_key=True)
+    asset_id = Column(ForeignKey('asset.id'))
+    price = Column(Numeric)
+    ts = Column(DateTime)
+
+    asset = relationship('Asset')
+
+
+class AssetDailyWethPrice(Base):
+    __tablename__ = 'asset_daily_weth_price'
+
+    id = Column(Integer, primary_key=True)
+    asset_id = Column(ForeignKey('asset.id'))
+    price = Column(Numeric)
+    ts = Column(DateTime)
 
     asset = relationship('Asset')
 
@@ -117,3 +147,28 @@ class PositionTransaction(Base):
     ts = Column(DateTime)
 
     position = relationship('Position')
+
+
+class Portfolio(Base):
+    __tablename__ = 'portfolio'
+
+    id = Column(Integer, primary_key=True)
+    purchase_period_id = Column(ForeignKey('purchase_period.id'))
+    name = Column(String(250))
+    numeraire = Column(String(50))
+
+    purchase_period = relationship('PurchasePeriod')
+
+
+class AssetInPortfolio(Base):
+    __tablename__ = 'asset_in_portfolio'
+
+    id = Column(Integer, primary_key=True)
+    period_start = Column(DateTime)
+    period_end = Column(DateTime)
+    volume = Column(Numeric)
+    asset_id = Column(ForeignKey('asset.id'))
+    portfolio_id = Column(ForeignKey('portfolio.id'))
+
+    asset = relationship('Asset')
+    portfolio = relationship('Portfolio')
